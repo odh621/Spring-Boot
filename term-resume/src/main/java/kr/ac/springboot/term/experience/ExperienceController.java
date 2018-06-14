@@ -23,6 +23,7 @@ import org.springframework.web.servlet.NoHandlerFoundException;
 
 
 import kr.ac.springboot.term.resume.ResumeRepository;
+import kr.ac.springboot.term.resumereplay.ResumeReplyRepository;
 
 @ControllerAdvice
 @Controller
@@ -67,7 +68,8 @@ public class ExperienceController {
 		  return "errors/404";
 	  }
 	  	return "/experience/item";
-}
+	}
+	
 	@GetMapping("/register")
 	public void registerGET(@ModelAttribute("vo") Experience vo) {
 	}

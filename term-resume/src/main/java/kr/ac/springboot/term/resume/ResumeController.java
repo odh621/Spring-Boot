@@ -50,10 +50,11 @@ public class ResumeController {
     @GetMapping("/{bno}")
 	public String view(@PathVariable("bno") long bno, Model model) {
 	  if (repo.findById(bno).isPresent()) {
-		  return "resume";
+		  return "errors/500";
 	  } else {
 		  return "errors/404";
 	  }
-    }
+	 }
+    
 
 }

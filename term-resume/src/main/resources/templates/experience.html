@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{/layout/layout}">
+
+<div layout:fragment="content">
+
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+            <div class="my-auto">
+                <tr th:each="resume:${result1}">
+                <h1 class="mb-0">
+                	<td>[[${resume.name}]]'Carrer</td>
+                </h1>
+                <div class="subheading mb-5"> 
+                	<td>[[${resume.oi}]]</td>
+                    <td><a href="[[${resume.email}]]"> [[${resume.email}]] </a></td>
+                </div>
+                </tr>
+                <div class="text-md-right">
+                   <a th:href="@{register}"><button class="btn btn-info">Add Carrer</button></a>
+                </div>
+                
+				<tr th:each="Experience:${result}">
+				<hr/>
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
+                    	<td><a th:href='${Experience.bno}'><button class="btn btn-default">Info</button></a></td>
+                    	<br><br>
+                        <td><h3 class="mb-0">[[${Experience.position}]]</h3></td><br>
+                        <td><div class="subheading mb-3">[[${Experience.title}]]</div></td>
+                        <td><p>[[${Experience.content}]]</p></td>
+                        <div>
+                        	<a th:href="@{/experience/} + ${Experience.bno} +@{/update}"><button class="btn btn-info">Edit</button></a>
+                        	<a th:href="@{/experience/} + ${Experience.bno} +@{/delete}"><button class="btn btn-danger">Delete</button></a>
+                        </div> 
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <td><span class="text-primary">[[${Experience.term}]]</span></td>
+                    </div>
+                </div>
+                </tr>
+                
+            </div>
+        </section>
+    </div>
+</div>
+
+</html>

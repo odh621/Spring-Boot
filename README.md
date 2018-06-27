@@ -1,4 +1,4 @@
-SpringBoot
+Spring Boot
 ===
 * 한 학기동안 Spring Boot 수업을 들으면서 작성했던 코드들입니다.
 * 수업을 수강하며 작성했던 예제 코드들도 같이 있습니다.

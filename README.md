@@ -8,6 +8,6 @@ Start-SpringBoot
 
 * 수업을 마무리하며 Term-Project로 제출했던 Term-Resume이 있습니다.
 
-    * Term-Resume 프로젝트 URL : http://dongh9508.hopto.org:8082
+    * Term-Resume 프로젝트 URL : https://donghun-dev.kro.kr:8082
 
 * 수업을 수강하며 공부했던 책은 스타트 스프링 부트란 책입니다. 저자는 구멍가게 코딩단입니다.

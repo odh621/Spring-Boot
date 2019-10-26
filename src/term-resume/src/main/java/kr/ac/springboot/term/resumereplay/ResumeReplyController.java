@@ -21,21 +21,21 @@ import kr.ac.springboot.term.resume.Resume;
 @RestController
 @RequestMapping("/replies/")
 public class ResumeReplyController {
-	
-	@Autowired
-	private ResumeReplyRepository replyrepo;
-	
-	@GetMapping("/{bno}")
+
+    @Autowired
+    private ResumeReplyRepository replyrepo;
+
+    @GetMapping("/{bno}")
     public ResponseEntity<List<ResumeReply>> getReplies(@PathVariable("bno") Long bno) {
 
         Resume resume = new Resume();
         resume.setBno(bno);
-        
+
         return new ResponseEntity<>(getListByResume(resume), HttpStatus.OK);
-        
+
     }
-	
-	@Transactional
+
+    @Transactional
     @PostMapping("/{bno}")
     public ResponseEntity<List<ResumeReply>> addReply(@PathVariable("bno") Long bno, @RequestBody ResumeReply reply) {
 
@@ -48,8 +48,8 @@ public class ResumeReplyController {
 
         return new ResponseEntity<>(getListByResume(resume), HttpStatus.CREATED);
     }
-	
-	@Transactional
+
+    @Transactional
     @DeleteMapping("/{bno}/{rno}")
     public ResponseEntity<List<ResumeReply>> remove(
             @PathVariable("bno") Long bno,

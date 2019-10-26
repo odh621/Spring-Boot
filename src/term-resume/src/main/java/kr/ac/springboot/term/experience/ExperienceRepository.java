@@ -8,5 +8,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ExperienceRepository extends CrudRepository<Experience, Long> {
-	List<Experience> findAllByOrderByRegdateDesc();
+    List<Experience> findAllByOrderByRegdateDesc();
 }

@@ -37,6 +37,9 @@ Start-SpringBoot
     ```bash
     $ git clone https://github.com/donghL-dev/Start-SpringBoot.git
     ```
+* DB는 MySQL을 쓴다고 가정.
+
+    * 다른 DB를 사용한다면, 그 DB에 맞게 설정을 해야함.
 
 * 프로젝트 내 src\term-resume\src\main\resources 경로에 `application.yml` 생성.
 

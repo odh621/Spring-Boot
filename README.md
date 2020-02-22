@@ -8,7 +8,7 @@ Start-SpringBoot
 
 * 수업을 마무리하며 Term-Project로 제출했던 Term-Resume이 있습니다.
 
-    * Term-Resume 프로젝트 URL : https://donghun.dev:8082
+    * Term-Resume 프로젝트 URL : [https://deploy.donghun.dev:8082](https://deploy.donghun.dev:8082)
 
 ## 개발환경
 
